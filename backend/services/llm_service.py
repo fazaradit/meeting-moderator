@@ -33,7 +33,7 @@ Berikan analisis dalam format JSON berikut (HANYA JSON, tanpa teks lain, tanpa m
 
 def analyze_transcript(transkrip: str) -> dict:
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="qwen/qwen3.8-27b",
         messages=[
             {
                 "role": "system",
